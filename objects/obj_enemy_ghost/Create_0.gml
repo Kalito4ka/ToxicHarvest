@@ -9,4 +9,4 @@ wave_amplitude = 0.3;
 alarm[1] = game_get_speed(gamespeed_fps) * irandom_range(100, 200);
 shoot_range = 120;
 can_shoot = true;
-shoot_cooldown = 3 * game_get_speed(gamespeed_fps);
+shoot_cooldown = 5 * game_get_speed(gamespeed_fps);

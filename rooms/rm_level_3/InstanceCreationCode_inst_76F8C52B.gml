@@ -1,0 +1,1 @@
+shoot_cooldown = 6 * game_get_speed(gamespeed_fps);

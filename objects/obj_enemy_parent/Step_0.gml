@@ -11,7 +11,15 @@ if (hp <= 0 && !is_dying) {
         instance_destroy();
     }
 }
-
+//активация монстров
+if (!is_active) {
+    if (instance_exists(obj_player)) {
+        if (point_distance(x, y, obj_player.x, obj_player.y) <= activation_range) {
+            is_active = true;
+        }
+    }
+    exit;
+}
 if (hit_cooldown > 0) {
     hit_cooldown -= 1;
 }

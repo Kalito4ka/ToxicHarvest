@@ -88,7 +88,6 @@
     {"id":{"name":"sp_player_stand","path":"sprites/sp_player_stand/sp_player_stand.yy",},},
     {"id":{"name":"sp_player_walk","path":"sprites/sp_player_walk/sp_player_walk.yy",},},
     {"id":{"name":"sp_repa_default","path":"sprites/sp_repa_default/sp_repa_default.yy",},},
-    {"id":{"name":"sp_repa_died_1","path":"sprites/sp_repa_died_1/sp_repa_died_1.yy",},},
     {"id":{"name":"sp_repa_died_2","path":"sprites/sp_repa_died_2/sp_repa_died_2.yy",},},
     {"id":{"name":"sp_repa_invulnerable","path":"sprites/sp_repa_invulnerable/sp_repa_invulnerable.yy",},},
     {"id":{"name":"sp_repa_walk","path":"sprites/sp_repa_walk/sp_repa_walk.yy",},},

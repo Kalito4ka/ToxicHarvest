@@ -1,3 +1,11 @@
+if (!is_active) {
+    if (instance_exists(obj_player)) {
+        if (point_distance(x, y, obj_player.x, obj_player.y) <= activation_range) {
+            is_active = true;
+        }
+    }
+    exit;
+}
 event_inherited();
 vspd += grv;
 if (vspd > 8) vspd = 8;
