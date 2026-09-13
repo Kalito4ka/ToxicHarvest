@@ -59,3 +59,17 @@ if (instance_exists(obj_player)){
         draw_rectangle_color(_x1, _y1, _current_x2, _y2, _col_left, _col_right, _col_right, _col_left, false);
     }
 }
+
+if (instance_exists(obj_player)) {
+    var _star_spacing = 24;
+    var _right_margin = 15;
+    var _star_y = _cam_y + 15;
+    
+    var _stars_count = obj_player.stars_found; 
+    
+    for (var s = 0; s < _stars_count; s++) {
+        var _star_x = (_cam_x + _cam_w) - _right_margin - (s * _star_spacing);
+        
+        draw_sprite(sp_star, 0, _star_x, _star_y);
+    }
+}

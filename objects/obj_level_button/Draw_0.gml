@@ -37,6 +37,17 @@ if (_is_open) {
 		   
 } else {
 	draw_sprite(sp_button_locked, 0, x, y);
+	if (level_number == 5) {
+        draw_set_color(c_yellow);
+        draw_set_halign(fa_center);
+        draw_set_valign(fa_top);
+        
+        // Выводим плашку с требованием под кнопкой
+        draw_text(x, y + 25, string(global.total_stars_collected) + " / 12 ★");
+        
+        draw_set_color(c_white);
+        draw_set_halign(fa_left);
+    }
 }
 
 draw_set_color(c_white);

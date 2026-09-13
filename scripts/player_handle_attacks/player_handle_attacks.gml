@@ -1,4 +1,4 @@
-function player_handle_attacks(){
+function player_handle_attacks(_is_grounded){
 	// кулдауны атак
 	if (attack_small_cooldown_timer > 0) attack_small_cooldown_timer -= 1;
 	if (attack_heavy_cooldown_timer > 0) attack_heavy_cooldown_timer -= 1;
@@ -28,7 +28,7 @@ function player_handle_attacks(){
 	}
 	
 	//мини атака - работает только на земле
-	if (_key_attack_small && attack_small_cooldown_timer <= 0 && _is_player_grounded) {
+	if (_key_attack_small && attack_small_cooldown_timer <= 0 && _is_grounded) {
         attack_small_cooldown_timer = 20; 
         sprite_index = sp_player_fight_1; 
         image_index = 0;

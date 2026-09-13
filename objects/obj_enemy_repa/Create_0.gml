@@ -1,7 +1,7 @@
 event_inherited();
 
 // Характеристики
-hp = 50;
+hp = 100;
 walk_spd = 0.7;
 charge_spd = 4;
 bounce_spd = 3;

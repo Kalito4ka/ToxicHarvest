@@ -5,8 +5,19 @@ var _s = keyboard_check(ord("S")) || keyboard_check(vk_down);
 var _d = keyboard_check(ord("D")) || keyboard_check(vk_right);
 var _shift = keyboard_check(vk_shift);
 
-var _on_ground = place_meeting(x, y+1, global.tilemap);
+var _on_tile = place_meeting(x, y + 1, global.tilemap);
+var _on_platform = false;
+//проверка на платформу
+var _platform_check = instance_place(x, y + max(1, vspd + 1), obj_moving_platform_parent);
+if (_platform_check != noone && vspd >= 0) {
+    // Игрок считается стоящим на платформе, только если его ноги выше крыши платформы
+    if (bbox_bottom <= _platform_check.bbox_top + vspd + 2) {
+        _on_platform = true;
+    }
+}
+var _on_ground = _on_tile || _on_platform;
 var _move_direction = _d - _a;
+
 //неуязвимость
 if (invincible_timer > 0){
 	invincible_timer -= 1;
@@ -63,25 +74,29 @@ else {
 			 vspd = 0;
 		} else {	
 			
-			player_handle_attacks();
+			player_handle_attacks(_on_ground);
 			
-			if (jump_prep_timer > 0) {
-		        jump_prep_timer -= 1;
-		        hspd = 0;
-		
-		        if (jump_prep_timer == 0) {
-		            vspd = jump_height;
-		            coyote_timer = 0;
-					}
-		    } else {
-		        if (_move_direction != 0){
-		            hspd += _move_direction * accel;
-		            hspd = clamp(hspd, -move_speed_walk, move_speed_walk);
-		        } else {
-		            if (hspd > 0) hspd = max(0, hspd - friction_force);
-		            if (hspd < 0) hspd = min(0, hspd + friction_force);
-		        }
-		    }
+			var _is_attacking_ground = (sprite_index == sp_player_fight_1 || sprite_index == sp_player_fight_3);
+
+            if (jump_prep_timer > 0) {
+                jump_prep_timer -= 1;
+                hspd = 0;
+        
+                if (jump_prep_timer == 0) {
+                    vspd = jump_height; // Задаем импульс прыжка (vspd становится отрицательным)
+                    coyote_timer = 0;
+                }
+            } else if (!_is_attacking_ground) {
+                if (_move_direction != 0){
+                    hspd += _move_direction * accel;
+                    hspd = clamp(hspd, -move_speed_walk, move_speed_walk);
+                } else {
+                    if (hspd > 0) hspd = max(0, hspd - friction_force);
+                    if (hspd < 0) hspd = min(0, hspd + friction_force);
+                }
+            } else {
+                hspd = 0; // Во время атаки на земле не двигаемся влево/вправо
+            }
 	
 			//управление таймером койота
 			if (_on_ground){
@@ -113,22 +128,33 @@ else {
 		}
 	}
 
-	var _final_hspd = round(hspd);
-	var _final_vspd = round(vspd);
+	// Притягиваем персонажа к платформе ТОЛЬКО если он не прыгает вверх (vspd >= 0)
+    if (_on_platform && _platform_check != noone && vspd >= 0 && jump_prep_timer <= 0) {
+        y = _platform_check.bbox_top - (bbox_bottom - y);
+        vspd = 0;
+    } else if (_on_tile) {
+        if (vspd >= 0) {
+            vspd = 0;
+            y = round(y); 
+        }
+    }
 
-	if (place_meeting(x, y + 1, global.tilemap)) {
-		if (vspd >= 0) {
-	        vspd = 0;
-	        _final_vspd = 0;
-	        y = round(y); 
-	    }
-	}
+    var _final_hspd = round(hspd);
+    var _final_vspd = round(vspd);
 
-	if (_move_direction != 0){
-		image_xscale = _move_direction;
-	}
+    if (_move_direction != 0 && sprite_index != sp_player_fight_1 && sprite_index != sp_player_fight_3){
+        image_xscale = _move_direction;
+    }
+    
+    // Передаем платформу в массив столкновений move_and_collide
+    var _collision_targets = [global.tilemap, obj_barrier_player];
+    
+    // Добавляем платформу в коллизии только когда падем на нее сверху
+    if (vspd >= 0 && _platform_check != noone && bbox_bottom <= _platform_check.bbox_top + 4) {
+        array_push(_collision_targets, obj_moving_platform_parent);
+    }
 
-	move_and_collide(_final_hspd, _final_vspd, [global.tilemap, obj_barrier_player]);
+	move_and_collide(_final_hspd, _final_vspd, _collision_targets);
 	
 	// управление анимациями
 	// анимации атаки

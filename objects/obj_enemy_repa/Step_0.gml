@@ -65,6 +65,10 @@ switch (state) {
         hspd = 0;
         sprite_index = sp_repa_walk;
         image_speed = 3;
+		
+		if (floor(image_index) == 4 || floor(image_index) == 9) {
+	        global.shake_amount = 3; // Сильный толчок на каждом шаге
+	    }
         
         // Постоянно поворачиваемся к игроку, пока топчемся
         if (instance_exists(obj_player)) {
@@ -82,6 +86,10 @@ switch (state) {
         sprite_index = sp_repa_walk;
         image_speed = 3;
         hspd = move_dir * charge_spd;
+		
+		if (floor(image_index) == 4 || floor(image_index) == 9) {
+	        global.shake_amount = 3; // Сильный толчок на каждом шаге
+	    }
 
         // столкновения 
 		// со стенами наперед чтобы не застрять
