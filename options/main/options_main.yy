@@ -4,7 +4,7 @@
   "name":"Main",
   "option_allow_instance_change":false,
   "option_audio_error_behaviour":false,
-  "option_author":"",
+  "option_author":"potatokalito4ka",
   "option_collision_compatibility":false,
   "option_copy_on_write_enabled":false,
   "option_draw_colour":4294967295,

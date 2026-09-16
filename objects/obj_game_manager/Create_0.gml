@@ -1,4 +1,4 @@
-total_levels = 5;
+total_levels = 10;
 level_open = array_create(total_levels + 1, false);
 level_open[1] = true;
 level_stars = array_create(total_levels + 1, 0);
