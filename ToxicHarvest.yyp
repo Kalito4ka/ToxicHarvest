@@ -144,6 +144,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rm_level_7","path":"rooms/rm_level_7/rm_level_7.yy",},},
     {"roomId":{"name":"rm_level_6","path":"rooms/rm_level_6/rm_level_6.yy",},},
     {"roomId":{"name":"rm_splash","path":"rooms/rm_splash/rm_splash.yy",},},
     {"roomId":{"name":"rm_level_5","path":"rooms/rm_level_5/rm_level_5.yy",},},
@@ -153,7 +154,6 @@
     {"roomId":{"name":"rm_level_","path":"rooms/rm_level_/rm_level_.yy",},},
     {"roomId":{"name":"rm_level_2","path":"rooms/rm_level_2/rm_level_2.yy",},},
     {"roomId":{"name":"rm_level_4","path":"rooms/rm_level_4/rm_level_4.yy",},},
-    {"roomId":{"name":"rm_level_7","path":"rooms/rm_level_7/rm_level_7.yy",},},
     {"roomId":{"name":"rm_level__","path":"rooms/rm_level__/rm_level__.yy",},},
   ],
   "templateType":"game",
