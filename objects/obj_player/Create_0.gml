@@ -40,3 +40,7 @@ ult_damage_required = 15;
 
 // собранные звезды
 stars_found = 0;
+
+// для врага лягушки
+is_grabbed = false;
+escape_presses = 0;

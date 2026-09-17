@@ -1,3 +1,36 @@
+// для лягушки
+if (is_grabbed) {
+    hspd = 0;
+    vspd = 0;
+    // Страховка: если игрок каким-то образом всё же оказался внутри стены
+    if (place_meeting(x, y, global.tilemap)) {
+        is_grabbed = false;
+        // Выталкивание наверх
+        while (place_meeting(x, y, global.tilemap)) {
+            y--;
+        }
+    }
+    // Освобождение по 3 нажатиям на W
+    if (keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_up)) {
+        escape_presses++;
+        
+        if (escape_presses >= 3) {
+            is_grabbed = false;
+            escape_presses = 0;
+            
+            // Находим язык и заставляем его втягиваться назад без игрока
+            var _tongue = instance_find(obj_frog_tongue, 0);
+            if (instance_exists(_tongue)) {
+                _tongue.state = "retracting";
+            }
+        }
+    }
+    
+    exit; // Запрещаем обычное управление, пока игрок схвачен
+} else {
+    escape_presses = 0;
+}
+
 var _w_pressed = keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_up);
 var _w_held = keyboard_check(ord("W")) || keyboard_check(vk_up);
 var _a = keyboard_check(ord("A")) || keyboard_check(vk_left);
@@ -7,6 +40,7 @@ var _shift = keyboard_check(vk_shift);
 
 var _on_tile = place_meeting(x, y + 1, global.tilemap);
 var _on_platform = false;
+
 //проверка на платформу
 var _platform_check = instance_place(x, y + max(1, vspd + 1), obj_moving_platform_parent);
 if (_platform_check != noone && vspd >= 0) {

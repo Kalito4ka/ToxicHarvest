@@ -1,0 +1,1 @@
+spawn_delay = 40;

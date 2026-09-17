@@ -6,7 +6,16 @@ if (!is_active) {
     }
     exit;
 }
-event_inherited();
+if (hp <= 0) {
+    
+    var _player = instance_find(obj_player, 0);
+    if (instance_exists(_player)) {
+        death_hspd = (x < _player.x) ? -2 : 2;
+    } else {
+        death_hspd = -image_xscale * 2;
+    }
+    death_vspd = -5;
+}
 if (sprite_index == sprite_attack) {
     
     if (floor(image_index) == 3 && !bullet_spawned) {
