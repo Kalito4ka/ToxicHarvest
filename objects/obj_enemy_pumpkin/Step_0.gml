@@ -25,3 +25,15 @@ if (sprite_index == sprite_attack) {
         bullet_spawned = true;
     }
 }
+
+if (star_drop) {
+	if (hp <= 0) {
+		for (var i = 0; i < number_of_stars; i++) {
+		    var _spawned_star = instance_create_layer(x + random_range(-10, 10), y, "Instances", obj_star);
+			 _spawned_star.vspeed = random_range(-4, -3);
+			_spawned_star.gravity = 2;
+		}
+		star_drop = false;
+		instance_destroy();
+	}
+}
