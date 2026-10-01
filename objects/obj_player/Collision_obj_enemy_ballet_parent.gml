@@ -7,5 +7,4 @@ if (!global.is_dead && invincible_timer <= 0) {
 	} else {
 		hspd = 5;
 	}
-    instance_destroy(other); 
 }

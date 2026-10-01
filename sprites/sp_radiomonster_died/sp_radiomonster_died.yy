@@ -1,6 +1,6 @@
 {
   "$GMSprite":"v2",
-  "%Name":"sp_radionmonster_died",
+  "%Name":"sp_radiomonster_died",
   "bboxMode":1,
   "bbox_bottom":58,
   "bbox_left":0,
@@ -44,7 +44,7 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"f05a0e29-b4ba-4f0c-9d53-edd3c41a1f37","blendMode":0,"displayName":"default","isLocked":false,"name":"f05a0e29-b4ba-4f0c-9d53-edd3c41a1f37","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"sp_radionmonster_died",
+  "name":"sp_radiomonster_died",
   "nineSlice":null,
   "origin":9,
   "parent":{
@@ -56,7 +56,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"sp_radionmonster_died",
+    "%Name":"sp_radiomonster_died",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -80,9 +80,9 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"sp_radionmonster_died",
+    "name":"sp_radiomonster_died",
     "playback":1,
-    "playbackSpeed":30.0,
+    "playbackSpeed":12.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
@@ -92,76 +92,76 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"69101410-ea9b-44df-9b98-16718aeb78b8","path":"sprites/sp_radionmonster_died/sp_radionmonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"69101410-ea9b-44df-9b98-16718aeb78b8","path":"sprites/sp_radiomonster_died/sp_radiomonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"5df62d13-fd2f-4dec-bec9-31b5af5c6783","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1ec8f8ba-8d53-4dc5-9e50-ac19b9eece31","path":"sprites/sp_radionmonster_died/sp_radionmonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1ec8f8ba-8d53-4dc5-9e50-ac19b9eece31","path":"sprites/sp_radiomonster_died/sp_radiomonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"c7501c91-d780-4906-a1f9-f68016f71615","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"54f05d49-528e-4992-875d-b3411c7b68bb","path":"sprites/sp_radionmonster_died/sp_radionmonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"54f05d49-528e-4992-875d-b3411c7b68bb","path":"sprites/sp_radiomonster_died/sp_radiomonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"7c7b742b-6aba-45b8-adc6-8b5a033fea67","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"29c28cc4-3ee9-4b2f-849a-d0a5a514d35a","path":"sprites/sp_radionmonster_died/sp_radionmonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"29c28cc4-3ee9-4b2f-849a-d0a5a514d35a","path":"sprites/sp_radiomonster_died/sp_radiomonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"79873ccb-a276-4af6-acd7-adc0f0fbfa61","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1040a6b2-5b6c-475f-ad60-187919ca1368","path":"sprites/sp_radionmonster_died/sp_radionmonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1040a6b2-5b6c-475f-ad60-187919ca1368","path":"sprites/sp_radiomonster_died/sp_radiomonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"b8f2b637-d00d-40cf-a5d4-49b4e140eed1","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e3f91176-fa66-4563-860b-f62878b37c3d","path":"sprites/sp_radionmonster_died/sp_radionmonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e3f91176-fa66-4563-860b-f62878b37c3d","path":"sprites/sp_radiomonster_died/sp_radiomonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"00918ac5-397b-4f12-86fc-2222e0697f44","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0e2385f6-ddb3-48ad-880f-f118087441b5","path":"sprites/sp_radionmonster_died/sp_radionmonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0e2385f6-ddb3-48ad-880f-f118087441b5","path":"sprites/sp_radiomonster_died/sp_radiomonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"9e6503f1-c2b4-4ec4-9b8a-dec3fb0913af","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"dbad29fc-c7f5-4384-b8f2-a4894861c19e","path":"sprites/sp_radionmonster_died/sp_radionmonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"dbad29fc-c7f5-4384-b8f2-a4894861c19e","path":"sprites/sp_radiomonster_died/sp_radiomonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"1bf30768-0377-4473-b23a-aef3bdbfc087","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d9aa4f3f-d6f9-44d0-b9e1-278dd421a260","path":"sprites/sp_radionmonster_died/sp_radionmonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d9aa4f3f-d6f9-44d0-b9e1-278dd421a260","path":"sprites/sp_radiomonster_died/sp_radiomonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"aa49288a-15a3-459f-87d8-f51a3bcbc6ae","IsCreationKey":false,"Key":8.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e84a27f2-986d-4e63-8899-522b25a6f54a","path":"sprites/sp_radionmonster_died/sp_radionmonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e84a27f2-986d-4e63-8899-522b25a6f54a","path":"sprites/sp_radiomonster_died/sp_radiomonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"a19dc01a-adfb-4a1d-aece-f6132dc7373d","IsCreationKey":false,"Key":9.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2c4c62db-2c6f-4bce-86e8-934f1bc3149c","path":"sprites/sp_radionmonster_died/sp_radionmonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2c4c62db-2c6f-4bce-86e8-934f1bc3149c","path":"sprites/sp_radiomonster_died/sp_radiomonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"d1033e1a-ca16-4fa7-9fc3-54957686e495","IsCreationKey":false,"Key":10.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c29283fe-3952-440f-8ea2-985743ed82d0","path":"sprites/sp_radionmonster_died/sp_radionmonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c29283fe-3952-440f-8ea2-985743ed82d0","path":"sprites/sp_radiomonster_died/sp_radiomonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"e41c13db-ab44-42a7-b721-9c1d9b12c36e","IsCreationKey":false,"Key":11.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"568aaf3d-2b34-46e5-b368-6bc7970743d6","path":"sprites/sp_radionmonster_died/sp_radionmonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"568aaf3d-2b34-46e5-b368-6bc7970743d6","path":"sprites/sp_radiomonster_died/sp_radiomonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"d14b4d7c-bc33-4558-bfae-9ed5c1b79b7a","IsCreationKey":false,"Key":12.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e32e36a1-f3c8-42a3-92eb-5f35d6fa8f15","path":"sprites/sp_radionmonster_died/sp_radionmonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e32e36a1-f3c8-42a3-92eb-5f35d6fa8f15","path":"sprites/sp_radiomonster_died/sp_radiomonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"1617ff89-ce0a-4290-9bba-54f0162d5c19","IsCreationKey":false,"Key":13.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7055c3c5-91d5-41e6-9ce9-aeda66b846b3","path":"sprites/sp_radionmonster_died/sp_radionmonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7055c3c5-91d5-41e6-9ce9-aeda66b846b3","path":"sprites/sp_radiomonster_died/sp_radiomonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"3860e841-3bc3-43bf-8e3d-e79c035313a8","IsCreationKey":false,"Key":14.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"aaca2013-bc7a-4909-9408-c9bd0cfcf618","path":"sprites/sp_radionmonster_died/sp_radionmonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"aaca2013-bc7a-4909-9408-c9bd0cfcf618","path":"sprites/sp_radiomonster_died/sp_radiomonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"37828cbb-12ee-4760-bce4-edb2291550a8","IsCreationKey":false,"Key":15.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"24fb2ac6-4cda-4a7c-a291-37944db34470","path":"sprites/sp_radionmonster_died/sp_radionmonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"24fb2ac6-4cda-4a7c-a291-37944db34470","path":"sprites/sp_radiomonster_died/sp_radiomonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"a51bd807-3393-4528-b6a1-cb5360b928a8","IsCreationKey":false,"Key":16.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"318500b1-ad1a-4ddd-afef-27c505dc1261","path":"sprites/sp_radionmonster_died/sp_radionmonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"318500b1-ad1a-4ddd-afef-27c505dc1261","path":"sprites/sp_radiomonster_died/sp_radiomonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"d1eaaa2c-e9d9-4695-ac36-4ca50882f36d","IsCreationKey":false,"Key":17.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8833690d-5d62-4dec-90e8-4ed5aaa2ee75","path":"sprites/sp_radionmonster_died/sp_radionmonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8833690d-5d62-4dec-90e8-4ed5aaa2ee75","path":"sprites/sp_radiomonster_died/sp_radiomonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"7a344869-4184-4f79-8cf9-5d025b1121cc","IsCreationKey":false,"Key":18.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"27713b1c-43a2-4919-9f80-6cbe507373cf","path":"sprites/sp_radionmonster_died/sp_radionmonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"27713b1c-43a2-4919-9f80-6cbe507373cf","path":"sprites/sp_radiomonster_died/sp_radiomonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"ddbd2383-dc03-4355-a9b7-fad51677aeba","IsCreationKey":false,"Key":19.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4130e2d6-e178-4eb2-899f-3f86a7bd1e63","path":"sprites/sp_radionmonster_died/sp_radionmonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4130e2d6-e178-4eb2-899f-3f86a7bd1e63","path":"sprites/sp_radiomonster_died/sp_radiomonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"7030fec2-dccb-41dd-8529-f9669f169e2f","IsCreationKey":false,"Key":20.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e0d8a572-060d-4fb3-a333-5f96455d164d","path":"sprites/sp_radionmonster_died/sp_radionmonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e0d8a572-060d-4fb3-a333-5f96455d164d","path":"sprites/sp_radiomonster_died/sp_radiomonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"d0ac53f6-d0d9-4267-8247-59800b8f0f1b","IsCreationKey":false,"Key":21.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"05e6c7b9-9855-438e-9081-7d62f8464a6b","path":"sprites/sp_radionmonster_died/sp_radionmonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"05e6c7b9-9855-438e-9081-7d62f8464a6b","path":"sprites/sp_radiomonster_died/sp_radiomonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"20ae3998-54b8-4b27-9772-2bbcaa7e1d60","IsCreationKey":false,"Key":22.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3ccda097-faa8-4662-a061-6a1df340ce5d","path":"sprites/sp_radionmonster_died/sp_radionmonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3ccda097-faa8-4662-a061-6a1df340ce5d","path":"sprites/sp_radiomonster_died/sp_radiomonster_died.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"872ff4c8-42f0-4029-b05c-86110bed7077","IsCreationKey":false,"Key":23.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

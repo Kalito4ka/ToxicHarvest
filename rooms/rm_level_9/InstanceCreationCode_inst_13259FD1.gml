@@ -1,5 +1,5 @@
-spawn_cooldown_min = 30;
-spawn_cooldown_max = 300;
+spawn_cooldown_min = 60;
+spawn_cooldown_max = 360;
 max_monsters = 10;
 spawn_radius = 0;
 monster = obj_toxic_ball;

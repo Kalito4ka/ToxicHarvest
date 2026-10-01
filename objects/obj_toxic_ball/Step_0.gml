@@ -1,7 +1,24 @@
 event_inherited();
+//анимация взрыва
+if (state != "pop" && place_meeting(x, y, obj_player)) {
+    speed = 0;
+    state = "pop";
+    
+    if (spr_pop != noone && sprite_exists(spr_pop)) {
+        sprite_index = spr_pop;
+        image_index = 0;
+        image_speed = 1;
+    } else {
+        instance_destroy();
+    }
+}
 
 if (state == "fly") {
     sprite_index = spr_fly;
+    
+    if (fly_dir == "down") image_angle = 270;
+    else if (fly_dir == "left") image_angle = 180;
+    else if (fly_dir == "right") image_angle = 0;
     
     var _hit_wall = false;
     
@@ -16,6 +33,18 @@ if (state == "fly") {
     }
 
     if (_hit_wall) {
+        var _dx = 0;
+        var _dy = 0;
+        
+        if (fly_dir == "down") _dy = 1;
+        else if (fly_dir == "left") _dx = -1;
+        else if (fly_dir == "right") _dx = 1;
+
+        while (!place_meeting(x + _dx, y + _dy, global.tilemap)) {
+            x += _dx;
+            y += _dy;
+        }
+
         speed = 0;
         
         if (spr_hit != noone && sprite_exists(spr_hit)) {
@@ -24,17 +53,15 @@ if (state == "fly") {
             image_index = 0;
             image_speed = 1;
             
-            // Сбрасываем масштабы
             image_xscale = 1;
             image_yscale = 1;
             
-            // Ориентируем спрайт отскока от пола относительно стены
             if (fly_dir == "down") {
-                image_angle = 0;   // Летит вниз -> ударяется о пол (стандартное положение)
+                image_angle = 270;
             } else if (fly_dir == "left") {
-                image_angle = -90; // Летит влево -> поворачиваем "пол" на -90 градусов к левой стене
+                image_angle = 180;
             } else if (fly_dir == "right") {
-                image_angle = 90;  // Летит вправо -> поворачиваем "пол" на 90 градусов к правой стене
+                image_angle = 0;
             }
         } 
         else {
@@ -46,13 +73,16 @@ if (state == "fly") {
             image_xscale = 1;
             image_yscale = 1;
             
-            if (fly_dir == "down") {
-                image_angle = 0;
-            } else if (fly_dir == "left") {
-                image_angle = -90;
-            } else if (fly_dir == "right") {
-                image_angle = 90;
-            }
+            if (fly_dir == "down") image_angle = 270;
+            else if (fly_dir == "left") image_angle = 180;
+            else if (fly_dir == "right") image_angle = 0;
         }
     }
+}
+else if (state == "hit" || state == "pop") {
+    speed = 0; 
+    
+    if (fly_dir == "down") image_angle = 270;
+    else if (fly_dir == "left") image_angle = 180;
+    else if (fly_dir == "right") image_angle = 0;
 }
