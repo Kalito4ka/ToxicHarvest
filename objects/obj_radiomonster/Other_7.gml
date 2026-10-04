@@ -14,7 +14,7 @@ if (state == "scream") {
 // Окончание атаки
 else if (state == "attack") {
     state = "wait";
-    state_timer = game_get_speed(gamespeed_fps) * 5;
+    state_timer = game_get_speed(gamespeed_fps) * 1;
     sprite_index = spr_idle;
 }
 

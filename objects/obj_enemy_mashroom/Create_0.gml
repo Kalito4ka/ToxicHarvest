@@ -1,6 +1,6 @@
 event_inherited();
 
-hp = 150;
+hp = 200;
 spr_death_animation = sp_enemy_mashroom_died;
 
 hspd = 0;

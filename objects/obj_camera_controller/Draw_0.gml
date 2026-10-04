@@ -3,23 +3,23 @@ var _cam_y = camera_get_view_y(view_camera[0]);
 var _cam_w = camera_get_view_width(view_camera[0]);
 
 // отрисовка сердечек
-var _start_x = 10;
-var _start_y = 10;
-var _spacing = 24;
+if (instance_exists(obj_player) && obj_player.visible){
+	var _start_x = 10;
+	var _start_y = 10;
+	var _spacing = 24;
 
-for (var i = 0; i < 5; i++) {
-    var _sub_image = 0;
+	for (var i = 0; i < 5; i++) {
+	    var _sub_image = 0;
     
-    if (i >= global.player_lives){
-        _sub_image = 1;
-    }
+	    if (i >= global.player_lives){
+	        _sub_image = 1;
+	    }
     
-    draw_sprite(sp_interface_heart, _sub_image, _cam_x + _start_x + (i*_spacing), _cam_y + _start_y);
-}
-//накопление ульты
-if (instance_exists(obj_player)){
+	    draw_sprite(sp_interface_heart, _sub_image, _cam_x + _start_x + (i*_spacing), _cam_y + _start_y);
+	}
+	
 	var _ult_percent = (obj_player.ult_damage_current / obj_player.ult_damage_required)*100;
-	_ult_percent = clamp(_ult_percent, 0, 100);
+	ult_percent = clamp(_ult_percent, 0, 100);
 	var _bar_width = 117;
     var _bar_height = 8;
     var _offset_y = 28;
@@ -58,10 +58,8 @@ if (instance_exists(obj_player)){
         
         draw_rectangle_color(_x1, _y1, _current_x2, _y2, _col_left, _col_right, _col_right, _col_left, false);
     }
-}
-
-if (instance_exists(obj_player)) {
-    var _star_spacing = 24;
+	
+	var _star_spacing = 24;
     var _right_margin = 15;
     var _star_y = _cam_y + 15;
     

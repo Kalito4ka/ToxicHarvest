@@ -16,9 +16,20 @@ if (state != "pop" && place_meeting(x, y, obj_player)) {
 if (state == "fly") {
     sprite_index = spr_fly;
     
-    if (fly_dir == "down") image_angle = 270;
-    else if (fly_dir == "left") image_angle = 180;
-    else if (fly_dir == "right") image_angle = 0;
+    if (fly_dir == "down") {
+        direction = 270;
+        image_angle = 270;
+    } 
+    else if (fly_dir == "left") {
+        direction = 180;
+        image_angle = 180;
+    } 
+    else if (fly_dir == "right") {
+        direction = 0;
+        image_angle = 0;
+    }
+    
+    speed = move_spd;
     
     var _hit_wall = false;
     

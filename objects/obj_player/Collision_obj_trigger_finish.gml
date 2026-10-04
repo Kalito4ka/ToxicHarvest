@@ -23,16 +23,33 @@ if (_digits != "") {
     var _next_level = _current_level + 1;
     if (_next_level <= obj_game_manager.total_levels) {
 		
-	    // Особое условие для 5-го уровня
-	    if (_next_level == 5) {
-	        if (global.total_stars_collected >= 12) {
-	            obj_game_manager.level_open[_next_level] = true;
-	        }
-	    } else {
-	        // Для всех остальных уровней разблокировка обычная
-	        obj_game_manager.level_open[_next_level] = true;
-	    }
+	    // Особое условие для уровня
+	    switch (_next_level) {
+		    case 5:
+		        if (global.total_stars_collected >= 12) {
+		            obj_game_manager.level_open[_next_level] = true;
+		        }
+		        break;
+
+		    case 8:
+		        if (global.total_stars_collected >= 21) {
+		            obj_game_manager.level_open[_next_level] = true;
+		        }
+		        break;
+
+		    case 10:
+		        if (global.total_stars_collected >= 27) {
+		            obj_game_manager.level_open[_next_level] = true;
+		        }
+		        break;
+
+		    default:
+		        // Для всех остальных уровней разблокировка обычная
+		        obj_game_manager.level_open[_next_level] = true;
+		        break;
+		}
 	}
+	save_game_progress();
 }
 
-room_goto(rm_menu);
+transition_to_room(rm_menu);

@@ -109,7 +109,7 @@ switch (state) {
             }
             
             state = "wait";
-            state_timer = game_get_speed(gamespeed_fps) * 1.5;
+            state_timer = game_get_speed(gamespeed_fps) * 1;
             sprite_index = spr_idle;
         }
         break;

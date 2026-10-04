@@ -4,6 +4,9 @@ max_monsters = 10;
 spawn_radius = 0;
 monster = obj_enemy_slime;
 
+//для токсичного шара
+spawn_fly_dir = undefined;
+
 //босс
 is_boss_level = true;
 boss_object = obj_enemy_repa;

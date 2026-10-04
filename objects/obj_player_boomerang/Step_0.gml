@@ -1,4 +1,4 @@
-damage = irandom_range(3, 15);
+damage = irandom_range(10, 15);
 if (!returning){
 	x += dir * spd;
 	

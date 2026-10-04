@@ -1,11 +1,10 @@
-
-hp = 1;
+hp = 150;
 hit_cooldown = 0;
 is_dying = false;
 damage_to_player = 1;
 
 block_size = 16;
-sight_distance = 10 * block_size;          
+sight_distance = 20 * block_size;          
 knockback_spd = 12;                         
 
 spr_idle   = sp_radiomonster_idle;
@@ -18,8 +17,8 @@ state = "sleep"; // sleep, wait, scream, attack, damage, dead
 
 facing = 1;
 
-boss_scale = 2; // увеличение в 2 раза
-image_xscale = facing * boss_scale;
+boss_scale = 3; // увеличение в 2 раза
+image_xscale = -facing * boss_scale;
 image_yscale = facing*boss_scale;
 
 state_timer = 0;                            

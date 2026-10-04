@@ -1,0 +1,1 @@
+boss_to_watch = obj_radiomonster;
