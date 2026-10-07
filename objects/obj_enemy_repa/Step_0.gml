@@ -20,6 +20,8 @@ var _do_bounce = function() {
 	sprite_index = sp_repa_invulnerable;
     move_dir *= -1; // Отлетаем в противоположную бегу сторону
     vspd = -2.5;      // Импульс прыжка вверх
+	
+	damage_sound();
 };
 
 // логика состояний
@@ -65,10 +67,6 @@ switch (state) {
         hspd = 0;
         sprite_index = sp_repa_walk;
         image_speed = 3;
-		
-		if (floor(image_index) == 4 || floor(image_index) == 9) {
-	        global.shake_amount = 3; // Сильный толчок на каждом шаге
-	    }
         
         // Постоянно поворачиваемся к игроку, пока топчемся
         if (instance_exists(obj_player)) {
@@ -86,10 +84,6 @@ switch (state) {
         sprite_index = sp_repa_walk;
         image_speed = 3;
         hspd = move_dir * charge_spd;
-		
-		if (floor(image_index) == 4 || floor(image_index) == 9) {
-	        global.shake_amount = 3; // Сильный толчок на каждом шаге
-	    }
 
         // столкновения 
 		// со стенами наперед чтобы не застрять

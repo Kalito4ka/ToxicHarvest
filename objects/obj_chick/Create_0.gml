@@ -16,3 +16,8 @@ finished = false;
 stars_found = 0;
 
 depth = -10000;
+
+squeak_timer = 0;
+
+//звук
+has_played_victory = false;

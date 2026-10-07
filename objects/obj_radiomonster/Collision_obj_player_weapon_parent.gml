@@ -7,6 +7,7 @@ if (!is_dying && hit_cooldown <= 0 && state != "damage") {
         hit_cooldown = other.hit_cooldown_set; 
         
         hp -= other.damage;
+		has_played_damage = false;
         
         var _popup = instance_create_layer(x, y - 16, "Instances", obj_damage_text);
         if (instance_exists(_popup)) {

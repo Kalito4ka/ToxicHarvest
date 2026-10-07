@@ -6,7 +6,7 @@ if (!other.is_dying && other.hit_cooldown <= 0) {
     
     // нанесения урона у врага
     other.hp -= damage;
-    
+    other.damage_sound();
     // Уведомляем врага о получении урона
     with (other) {
         if (variable_instance_exists(id, "on_hit")) {

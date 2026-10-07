@@ -7,6 +7,7 @@ if (shake_timer > 0) {
         if (state == "help") {
             state = "idle";
             sprite_index = spr_idle;
+            played_help_sound = false;
         }
     }
 } else {
@@ -20,11 +21,21 @@ if (!is_dropped && instance_exists(obj_radiomonster) == false && instance_exists
         is_dropped = true;
         state = "falling";
         shake_timer = 180;
+		
+		if (!played_help_sound) {
+            audio_play_sound(snd_prison_help, 5, false);
+            played_help_sound = true;
+        }
     }
 }
 
 // падение вниз
 if (state == "falling" && shake_timer <= 0) {
+	if (!played_fall_sound) {
+        audio_play_sound(snd_prison_fall, 5, false);
+        played_fall_sound = true;
+    }
+	
     var _fall_spd = 6;
     if (!place_meeting(x, y + _fall_spd, global.tilemap)) {
         y += _fall_spd;
@@ -33,6 +44,11 @@ if (state == "falling" && shake_timer <= 0) {
             y += 1;
         }
         state = "grounded";
+		
+		if (!played_fallen_sound) {
+            audio_play_sound(snd_prison_fallen, 5, false);
+            played_fallen_sound = true;
+        }
     }
 }
 
@@ -43,7 +59,7 @@ if (state == "grounded") {
         state = "opened";
         sprite_index = spr_freedom;
         shake_timer = 60;
-        
+        audio_play_sound(snd_prison_fall, 5, false);
         var _chick = instance_create_layer(x, y, "Instances", obj_chick);
     }
 }

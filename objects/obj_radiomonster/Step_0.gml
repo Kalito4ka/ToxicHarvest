@@ -34,6 +34,8 @@ switch (state) {
             sprite_index = spr_scream;
             image_index = 0;
             image_speed = 1;
+			
+			has_played_roar = false;
         }
         break;
 
@@ -111,6 +113,7 @@ switch (state) {
             state = "wait";
             state_timer = game_get_speed(gamespeed_fps) * 1;
             sprite_index = spr_idle;
+			has_played_damage = false;
         }
         break;
 
@@ -118,5 +121,6 @@ switch (state) {
         sprite_index = spr_died;
         image_xscale = facing * boss_scale;
         speed = 0;
+		stop_boss_music(1500);
         break;
 }

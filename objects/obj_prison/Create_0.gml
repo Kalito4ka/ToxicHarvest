@@ -11,3 +11,8 @@ spr_help = sp_prison_help;
 spr_freedom = sp_prison_freedom;
 
 is_dropped = false;
+
+// звук
+played_help_sound = false;
+played_fall_sound = false;
+played_fallen_sound = false;

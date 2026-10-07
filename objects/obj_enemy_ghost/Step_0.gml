@@ -35,8 +35,11 @@ if (_player_in_range){
     y += sin(wave_timer) * wave_amplitude;
 	
 	if (can_shoot) {
+		
 		can_shoot = false;
 		alarm[0] = shoot_cooldown;
+		
+		attack_sound();
 		
 		var _bullet = instance_create_layer(x, y, "Instances", obj_enemy_ghost_bullet);
 		

@@ -17,7 +17,7 @@ state = "sleep"; // sleep, wait, scream, attack, damage, dead
 
 facing = 1;
 
-boss_scale = 3; // увеличение в 2 раза
+boss_scale = 3;
 image_xscale = -facing * boss_scale;
 image_yscale = facing*boss_scale;
 
@@ -32,3 +32,6 @@ moved_phase2 = false;
 
 sprite_index = spr_idle;
 image_speed = 1;
+
+has_played_damage = false;
+has_played_roar = false;

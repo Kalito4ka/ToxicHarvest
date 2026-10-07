@@ -11,6 +11,7 @@ if (instance_number(monster) < max_monsters) {
 	if (spawn_fly_dir != undefined) {
         _inst.fly_dir = spawn_fly_dir;
     }
+	play_spawn_sound(_spawn_x, _spawn_y);
 }
 
 alarm[0] = irandom_range(spawn_cooldown_min, spawn_cooldown_max);

@@ -1,5 +1,7 @@
 event_inherited();
 spr_death_animation = sp_ghost_death;
+snd_death = snd_ghost_death;
+snd_attack = snd_ghost_attack;
 spd = 0.5;
 dir = 1;
 wave_timer = 0;

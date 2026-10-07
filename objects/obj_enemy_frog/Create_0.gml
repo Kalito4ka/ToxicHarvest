@@ -25,3 +25,5 @@ death_vspd = -5;
 death_hspd = 0;
 death_gravity = 0.25;
 
+snd_attack = snd_frog_step;
+snd_frog = snd_frog_attack;

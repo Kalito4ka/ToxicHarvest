@@ -60,6 +60,7 @@ if (!is_jumping){
         }
         
         if (_can_jump){
+			attack_sound();
             hspd = _dir * 2;
             vspd = -6; 
             is_jumping = true;

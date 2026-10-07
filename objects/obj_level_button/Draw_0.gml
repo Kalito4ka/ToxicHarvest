@@ -60,7 +60,7 @@ if (_is_open) {
         draw_set_halign(fa_center);
         draw_set_valign(fa_top);
         
-        draw_text(x+2, y + 30, string(global.total_stars_collected) + " / " + string(_required_stars) + " ★");
+        draw_text(x+2, y + 30, string(global.total_stars_collected) + " / " + string(_required_stars));
         
         draw_set_color(c_white);
         draw_set_halign(fa_left);

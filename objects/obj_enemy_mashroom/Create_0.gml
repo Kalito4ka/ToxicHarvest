@@ -20,3 +20,10 @@ base_scale = (image_xscale != 1) ? abs(image_xscale) : 1.5;
 
 image_xscale = base_scale;
 image_yscale = base_scale;
+
+// звуки
+
+sound_range = 700;
+snd_death = snd_mashroom_death;
+snd_damage = snd_mashroom_damage;
+snd_attack = snd_mashroom_jump;

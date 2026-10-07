@@ -1,3 +1,5 @@
+//слушатель для звуков
+audio_listener_position(x, y, 0);
 // для лягушки
 if (is_grabbed) {
     hspd = 0;

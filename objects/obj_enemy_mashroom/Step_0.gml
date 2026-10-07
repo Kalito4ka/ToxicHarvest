@@ -9,7 +9,9 @@ if (!is_active) {
 
 event_inherited();
 
-if (is_dying) exit;
+if (is_dying) {
+	exit;
+}
 
 var _player = instance_find(obj_player, 0);
 
@@ -49,6 +51,8 @@ switch (state) {
             image_index = 0;
             image_speed = 1;
             has_slammed = false;
+			
+			attack_sound();
         }
         break;
         

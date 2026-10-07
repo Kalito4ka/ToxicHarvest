@@ -1,4 +1,9 @@
 event_inherited();
+
+if (audio_emitter_exists(sfx_emitter)) {
+    audio_emitter_position(sfx_emitter, x, y, 0);
+}
+
 //анимация взрыва
 if (state != "pop" && place_meeting(x, y, obj_player)) {
     speed = 0;

@@ -26,3 +26,10 @@ invulnerable = false;
 invulnerable_timer = 0;
 hit_cooldown = 5 * game_get_speed(gamespeed_fps);
 flash_red = false;
+
+// звук
+
+sound_range = 700;
+snd_death = snd_repa_death;
+snd_damage = snd_repa_damage;
+snd_attack = snd_step;

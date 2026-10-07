@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"stop_boss_music",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"stop_boss_music",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

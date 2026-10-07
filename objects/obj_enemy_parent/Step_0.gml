@@ -2,7 +2,9 @@ if (hp <= 0 && !is_dying) {
     is_dying = true;
     hspd = 0;
 	vspd = 0;
-    
+	
+    death_sound();
+	
     if (spr_death_animation != noone) {
         sprite_index = spr_death_animation;
         image_index = 0;

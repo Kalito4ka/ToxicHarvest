@@ -3,7 +3,7 @@ if (state == "afraid") {
         image_xscale = (obj_player.x >= x) ? 1 : -1;
     }
     
-    afraid_timer--;
+	afraid_timer--;
     if (afraid_timer <= 0) {
         state = "idle";
         sprite_index = spr_idle;
@@ -70,7 +70,7 @@ if (state == "wait_finish") {
                 obj_game_manager.level_open[_next_level] = true;
             }
         }
-
+		save_game_progress();
         transition_to_room(rm_menu);
     }
 }

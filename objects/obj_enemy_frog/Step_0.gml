@@ -6,11 +6,12 @@ if (!is_active) {
     }
     exit;
 }
+
 // Смерть
 if (hp <= 0 && !is_dying) {
     is_dying = true;
     state = "dead";
-    
+	
     if (instance_exists(tongue_inst)) {
         instance_destroy(tongue_inst);
     }
@@ -42,6 +43,7 @@ if (hp <= 0 && !is_dying) {
 }
 
 if (is_dying) {
+	audio_play_sound(snd_frog, 5, false);
     death_vspd += death_gravity;
     x += death_hspd;
     y += death_vspd;
@@ -85,6 +87,9 @@ switch (state) {
         
         if (is_stepping) {
 	        sprite_index = sp_enemy_frog_idle_2;
+			if (floor(image_index) == 3) {
+	            attack_sound();
+	        }
 	    } else {
 	        sprite_index = sp_enemy_frog_idle_1;
 	    }
@@ -102,6 +107,7 @@ switch (state) {
         
     case "attack_start":
         if (floor(image_index) >= 9) {
+			audio_play_sound_on(sfx_emitter, snd_frog, false, 5);
             image_speed = 0;
             image_index = 9;
             
@@ -115,8 +121,8 @@ switch (state) {
         }
         break;
         
-    case "tongue_out":
     case "pulling":
+		
         image_speed = 0;
         image_index = 9;
         break;
