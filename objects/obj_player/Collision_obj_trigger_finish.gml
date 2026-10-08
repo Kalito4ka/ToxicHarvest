@@ -51,5 +51,5 @@ if (_digits != "") {
 	}
 	save_game_progress();
 }
-
+audio_play_sound(snd_level_win, 5, false);
 transition_to_room(rm_menu);

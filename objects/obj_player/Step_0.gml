@@ -65,6 +65,11 @@ if (global.player_lives <= 0 && !global.is_dead){
 	global.is_dead = true;
 	depth = -9999;
 	alarm[0] = 120;
+	
+	if (!played_death_sound) {
+        audio_play_sound(snd_player_lose, 10, false);
+        played_death_sound = true;
+    }
 }
 
 if (global.is_dead){
@@ -95,13 +100,16 @@ else {
             vspd += gravity_force;
         }
 	} else {
-		
+		// Проверяем, не атакует ли игрок прямо сейчас
+		var _is_attacking = (sprite_index == sp_player_fight_1 || sprite_index == sp_player_fight_2 || sprite_index == sp_player_fight_3);
 		// инициация рывка
-		if (_shift && dash_timer <= 0 && dash_cooldown_timer <= 0){
-			dash_timer = dash_duration;
-			dash_cooldown_timer = dash_cooldown;
-			vspd = 0;
-			image_index = 0;
+		if (_shift && dash_timer <= 0 && dash_cooldown_timer <= 0 && !_is_attacking) {
+		    dash_timer = dash_duration;
+		    dash_cooldown_timer = dash_cooldown;
+		    vspd = 0;
+		    image_index = 0;
+    
+		    audio_play_sound(snd_player_dash, 5, false);
 		}
 		// движения и физика
 		if (dash_timer > 0) {
@@ -209,40 +217,32 @@ else {
 	        sprite_index = _on_ground ? sp_player_stand : sp_player_jump;
 	    }
 	}
-	else if (sprite_index == sp_player_fight_2 && !_on_ground){
-		image_speed = 1;
-		
-		//хитбокс атаки
-		if (floor(image_index) == 3 && instance_number(obj_player_fight_2) == 0) {
-            var _heavy_strike = instance_create_layer(x + (image_xscale * 15), y - 4, "Instances", obj_player_fight_2);
-            _heavy_strike.image_xscale = image_xscale;
-            _heavy_strike.image_yscale = 1.5;
-			var _air_chance = random(100);
-	        if (_air_chance < 10) {
-	            _heavy_strike.damage = 10;
-			} else {
-	            _heavy_strike.damage = 7;
-	        }
-        }
-		
-        if (image_index >= image_number - 2) {
-            sprite_index = sp_player_jump;
-		}
+	else if (sprite_index == sp_player_fight_2) {
+	    image_speed = 1;
+    
+	    // хитбокс атаки
+	    if (floor(image_index) == 3 && instance_number(obj_player_fight_2) == 0) {
+	        var _heavy_strike = instance_create_layer(x + (image_xscale * 15), y - 4, "Instances", obj_player_fight_2);
+	        _heavy_strike.image_xscale = image_xscale;
+	        _heavy_strike.image_yscale = 1.5;
+	    }
+    
+	    if (image_index >= image_number - 1) {
+	        sprite_index = sp_player_jump;
+	    }
 	}
-	else if (sprite_index == sp_player_fight_1 || sprite_index == sp_player_fight_2){
-		image_speed = 1;
-		hspd = 0;
-		
-		if (sprite_index == sp_player_fight_1 && floor(image_index) == 3 && instance_number(obj_player_fight_1) == 0) {
-            var _strike = instance_create_layer(x + (image_xscale * 10), y, "Instances", obj_player_fight_1);
-            _strike.image_xscale = image_xscale;
-        }
-        
-        if (sprite_index == sp_player_fight_2 && floor(image_index) == 3 && instance_number(obj_player_fight_2) == 0) {
-            var _heavy_strike = instance_create_layer(x + (image_xscale * 15), y, "Instances", obj_player_fight_2);
-            _heavy_strike.image_xscale = image_xscale;
-            _heavy_strike.image_yscale = 1.5;
-        }
+	else if (sprite_index == sp_player_fight_1) {
+	    image_speed = 1;
+	    hspd = 0;
+    
+	    if (floor(image_index) == 3 && instance_number(obj_player_fight_1) == 0) {
+	        var _strike = instance_create_layer(x + (image_xscale * 10), y, "Instances", obj_player_fight_1);
+	        _strike.image_xscale = image_xscale;
+	    }
+    
+	    if (image_index >= image_number - 1) {
+	        sprite_index = sp_player_stand;
+	    }
 	} // остальные анимации
 	else {
 		if (dash_timer > 0) {

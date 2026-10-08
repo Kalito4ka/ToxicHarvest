@@ -25,7 +25,6 @@
     {"name":"inst_19560DEE","path":"rooms/rm_level_4/rm_level_4.yy",},
     {"name":"inst_45BEDB00","path":"rooms/rm_level_4/rm_level_4.yy",},
     {"name":"inst_12E9C2BD","path":"rooms/rm_level_4/rm_level_4.yy",},
-    {"name":"inst_62EE400C","path":"rooms/rm_level_4/rm_level_4.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -49,7 +48,6 @@
         {"$GMRInstance":"v4","%Name":"inst_19560DEE","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_19560DEE","objectId":{"name":"obj_monster_spawner","path":"objects/obj_monster_spawner/obj_monster_spawner.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":368.0,"y":120.0,},
         {"$GMRInstance":"v4","%Name":"inst_45BEDB00","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_45BEDB00","objectId":{"name":"obj_monster_spawner","path":"objects/obj_monster_spawner/obj_monster_spawner.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":736.0,"y":120.0,},
         {"$GMRInstance":"v4","%Name":"inst_12E9C2BD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_12E9C2BD","objectId":{"name":"obj_trigger_menu","path":"objects/obj_trigger_menu/obj_trigger_menu.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":224.0,},
-        {"$GMRInstance":"v4","%Name":"inst_62EE400C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_62EE400C","objectId":{"name":"obj_trigger_finish","path":"objects/obj_trigger_finish/obj_trigger_finish.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":208.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_decorates_4","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_decorates_4","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":18,"SerialiseWidth":85,"TileCompressedData":[
           -447,-2147483648,3,241,242,243,-20,-2147483648,3,268435699,268435698,268435697,-59,-2147483648,3,266,

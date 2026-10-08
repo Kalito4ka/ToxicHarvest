@@ -5,8 +5,10 @@ if (fade_state == 1 && fade_alpha >= 1) {
     fade_alpha = 1;
     fade_state = -1;
     
-    if (room_exists(target_room)) {
-        room_goto(target_room);
+    if (target_room != noone && room_exists(target_room)) {
+        var _next = target_room;
+        target_room = noone;
+        room_goto(_next);
     }
 }
 

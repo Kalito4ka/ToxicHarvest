@@ -85,7 +85,6 @@
     {"name":"inst_578A4314","path":"rooms/rm_level_3/rm_level_3.yy",},
     {"name":"inst_76F8C52B","path":"rooms/rm_level_3/rm_level_3.yy",},
     {"name":"inst_5CBE813","path":"rooms/rm_level_3/rm_level_3.yy",},
-    {"name":"inst_7FE45A87","path":"rooms/rm_level_3/rm_level_3.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -169,7 +168,6 @@
         {"$GMRInstance":"v4","%Name":"inst_183F25CE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_183F25CE","objectId":{"name":"obj_enemy_slime","path":"objects/obj_enemy_slime/obj_enemy_slime.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":352.0,"y":192.0,},
         {"$GMRInstance":"v4","%Name":"inst_578A4314","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_578A4314","objectId":{"name":"obj_enemy_slime","path":"objects/obj_enemy_slime/obj_enemy_slime.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2512.0,"y":64.0,},
         {"$GMRInstance":"v4","%Name":"inst_5CBE813","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5CBE813","objectId":{"name":"obj_trigger_menu","path":"objects/obj_trigger_menu/obj_trigger_menu.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":192.0,},
-        {"$GMRInstance":"v4","%Name":"inst_7FE45A87","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7FE45A87","objectId":{"name":"obj_trigger_finish","path":"objects/obj_trigger_finish/obj_trigger_finish.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":176.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_decorations_2","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_decorations_2","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":18,"SerialiseWidth":185,"TileCompressedData":[
           -675,-2147483648,5,84,-2147483648,-2147483648,57,83,-12,-2147483648,1,57,-4,-2147483648,1,81,-127,-2147483648,

@@ -11,7 +11,7 @@ function player_handle_attacks(_is_grounded){
 	// ульта
 	if (_key_ultimate && ult_damage_current >= ult_damage_required) {
 	    if (sprite_index != sp_player_fight_1 && sprite_index != sp_player_fight_2 && sprite_index != sp_player_fight_3) {
-        
+			audio_play_sound(snd_player_attack_3, 5, false);
 	        if (! _is_player_grounded) {
 	            ult_damage_current = 0;
             
@@ -29,16 +29,18 @@ function player_handle_attacks(_is_grounded){
 	
 	//мини атака - работает только на земле
 	if (_key_attack_small && attack_small_cooldown_timer <= 0 && _is_grounded) {
-        attack_small_cooldown_timer = 20; 
+        audio_play_sound(snd_player_attack_1, 5, false);
+		attack_small_cooldown_timer = 20; 
         sprite_index = sp_player_fight_1; 
         image_index = 0;
     }
-	//мега атака - работает и на земле и в воздухе
-	if (_key_attack_heavy && attack_heavy_cooldown_timer <= 0) {
-        attack_heavy_cooldown_timer = 60;
-        sprite_index = sp_player_fight_2; 
-        image_index = 0;
-		vspd = 0;
-    }
+	//мега атака - работает в воздухе
+	if (_key_attack_heavy && attack_heavy_cooldown_timer <= 0 && !_is_grounded) {
+	    audio_play_sound(snd_player_attack_2, 5, false);
+	    attack_heavy_cooldown_timer = 60;
+	    sprite_index = sp_player_fight_2; 
+	    image_index = 0;
+	    vspd = 0;
+	}
 }
 

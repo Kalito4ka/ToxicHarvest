@@ -37,16 +37,20 @@ switch (room) {
         break;
 }
 
-if (_target_bgm != current_bgm) {
+if (_target_bgm != current_bgm || was_dead) {
+    
     if (audio_is_playing(current_bgm_inst)) {
-        audio_sound_gain(current_bgm_inst, 0, 1000);
+        audio_stop_sound(current_bgm_inst);
     }
     
     current_bgm = _target_bgm;
     
     if (current_bgm != -1) {
         current_bgm_inst = audio_play_sound(current_bgm, 10, true);
+        
         audio_sound_gain(current_bgm_inst, 0, 0);
-        audio_sound_gain(current_bgm_inst, 1, 1000);
+        audio_sound_gain(current_bgm_inst, 1, 500);
     }
 }
+
+was_dead = false;

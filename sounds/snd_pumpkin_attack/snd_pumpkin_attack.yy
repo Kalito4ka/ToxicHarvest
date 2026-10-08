@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"snd_pumpkin_attack.mp3",
-  "volume":1.0,
+  "volume":0.6,
 }

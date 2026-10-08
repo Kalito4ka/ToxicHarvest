@@ -44,3 +44,6 @@ stars_found = 0;
 // для врага лягушки
 is_grabbed = false;
 escape_presses = 0;
+
+//звук
+played_death_sound = false;

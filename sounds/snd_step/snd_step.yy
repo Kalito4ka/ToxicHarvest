@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"snd_step.wav",
-  "volume":0.73,
+  "volume":0.6,
 }

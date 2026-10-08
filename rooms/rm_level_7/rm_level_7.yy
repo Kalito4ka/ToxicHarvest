@@ -124,7 +124,6 @@
     {"name":"inst_7FC51D86","path":"rooms/rm_level_7/rm_level_7.yy",},
     {"name":"inst_38196F59","path":"rooms/rm_level_7/rm_level_7.yy",},
     {"name":"inst_52D74296","path":"rooms/rm_level_7/rm_level_7.yy",},
-    {"name":"inst_2E670DDD","path":"rooms/rm_level_7/rm_level_7.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -142,7 +141,6 @@
         {"$GMRInstance":"v4","%Name":"inst_29A0FD08","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_29A0FD08","objectId":{"name":"obj_enemy_pumpkin","path":"objects/obj_enemy_pumpkin/obj_enemy_pumpkin.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2448.0,"y":96.0,},
         {"$GMRInstance":"v4","%Name":"inst_4546C30D","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4546C30D","objectId":{"name":"obj_enemy_pumpkin","path":"objects/obj_enemy_pumpkin/obj_enemy_pumpkin.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2544.0,"y":48.0,},
         {"$GMRInstance":"v4","%Name":"inst_5C64F068","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5C64F068","objectId":{"name":"obj_enemy_pumpkin","path":"objects/obj_enemy_pumpkin/obj_enemy_pumpkin.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2288.0,"y":112.0,},
-        {"$GMRInstance":"v4","%Name":"inst_2E670DDD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2E670DDD","objectId":{"name":"obj_trigger_finish","path":"objects/obj_trigger_finish/obj_trigger_finish.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":224.0,},
       ],"layers":[],"name":"Instances_pumpkin","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_decorates_3","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_decorates_3","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":18,"SerialiseWidth":185,"TileCompressedData":[
           -2438,-2147483648,4,36,37,38,39,-181,-2147483648,4,61,62,63,64,-101,-2147483648,4,36,37,38,39,-10,-2147483648,
@@ -383,7 +381,7 @@
           179,180,-7,0,-3,-2147483648,-12,176,1,0,-10,-2147483648,-7,0,-14,-2147483648,-2,0,-26,-2147483648,1,
           268435632,-12,176,-7,-2147483648,-5,176,-41,-2147483648,-2,0,-4,176,-6,-2147483648,1,0,-3,-2147483648,
           -8,0,2,-2147483648,0,-4,-2147483648,-14,0,-3,-2147483648,-12,176,-12,-2147483648,-6,0,-15,-2147483648,
-          1,0,-20,-2147483648,-3,137,-3,-2147483648,1,268435632,-12,176,-6,-2147483648,1,0,-5,176,-41,-2147483648,
+          1,0,-20,-2147483648,-4,0,-2,-2147483648,1,268435632,-12,176,-6,-2147483648,1,0,-5,176,-41,-2147483648,
           -2,0,-4,176,-15,0,-4,151,-4,0,-18,151,-12,176,-60,137,1,268435632,-12,176,-7,137,-5,176,-41,-2147483648,
           -2,0,-4,176,-15,151,-38,176,-59,137,2,268435593,268435632,-12,176,-7,137,-5,176,-43,151,-57,176,-59,
           137,2,268435593,268435632,-12,176,-7,137,-52,176,

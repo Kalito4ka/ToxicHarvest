@@ -85,6 +85,8 @@ switch (state) {
                 if (_player.invincible_timer <= 0 && !global.is_dead) {
                     global.player_lives -= owner.damage_to_player;
                     _player.invincible_timer = _player.invincible_duration;
+					//звук для игрока
+					audio_play_sound(snd_player_damage, 8, false);
                     
                     _player.vspd = -3.5;
                     _player.hspd = (_player.x < x) ? -4 : 4;
