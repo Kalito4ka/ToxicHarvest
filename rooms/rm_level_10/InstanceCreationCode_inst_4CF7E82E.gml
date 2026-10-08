@@ -1,1 +1,1 @@
-spawn_delay = 323;
+spawn_delay = 500;

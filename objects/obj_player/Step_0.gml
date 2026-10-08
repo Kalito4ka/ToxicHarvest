@@ -12,11 +12,11 @@ if (is_grabbed) {
             y--;
         }
     }
-    // Освобождение по 3 нажатиям на W
+    // Освобождение по нажатиям на W
     if (keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_up)) {
         escape_presses++;
         
-        if (escape_presses >= 3) {
+        if (escape_presses >= 2) {
             is_grabbed = false;
             escape_presses = 0;
             

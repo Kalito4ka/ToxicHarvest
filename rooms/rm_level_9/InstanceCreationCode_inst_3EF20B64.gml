@@ -1,4 +1,4 @@
-spawn_cooldown_min = 60;
+spawn_cooldown_min = 360;
 spawn_cooldown_max = 360;
 max_monsters = 10;
 spawn_radius = 0;

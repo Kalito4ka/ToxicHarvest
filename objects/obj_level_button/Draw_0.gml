@@ -41,8 +41,8 @@ if (_is_open) {
     // Определяем требуемое количество звезд для заблокированного уровня
     var _required_stars = 0;
     switch (level_number) {
-        case 5:
-            _required_stars = 12;
+        case 4:
+            _required_stars = 9;
             break;
             
         case 8:

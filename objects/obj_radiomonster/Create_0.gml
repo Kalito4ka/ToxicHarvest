@@ -1,4 +1,4 @@
-hp = 150;
+hp = 125;
 hit_cooldown = 0;
 is_dying = false;
 damage_to_player = 1;
